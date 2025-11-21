@@ -4,6 +4,7 @@ import Companies from './Companies'
 import Jobs from './Jobs'
 import Category from './Category'
 import Listofjob from './Listofjob'
+import Discovery from './Discovery'
 
 
 const Homepage = () => {
@@ -14,6 +15,7 @@ const Homepage = () => {
       <Jobs/>
       <Category/>
       <Listofjob/>
+      <Discovery/>
     </div>
   )
 }

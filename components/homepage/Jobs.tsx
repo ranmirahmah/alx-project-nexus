@@ -1,8 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
 import { RiVipCrown2Fill } from "react-icons/ri";
 import { MdFavoriteBorder } from "react-icons/md";
 import { HiLocationMarker } from "react-icons/hi";
-import leadWeb from '@/assets/images/Lead-web.svg'
+import { BsFillLightningChargeFill } from "react-icons/bs";
+import leadWeb from '@/assets/images/Lead-web.png'
 
 const Jobs = () => {
   return (
@@ -17,18 +19,19 @@ const Jobs = () => {
         </div>
 
         <div className='flex pt-15 px-30'>
-          <section className=' h-80 w-90 bg-amber-600 rounded-2xl p-5'>
+          <section className=' h-85 w-95 bg-amber-600 rounded-2xl p-5'>
             <section className='flex justify-between'>
               <div>
-              <MdFavoriteBorder className="text-2xl text-gray-500" />
+              <Image src={leadWeb} alt=""  className='h-15 w-15  rounded-2xl"'/>
               </div>
               <div className='flex gap-2'>
                 <RiVipCrown2Fill className="text-2xl text-yellow-500" />
+                <BsFillLightningChargeFill size={24} className="text-red-700" />
                 <MdFavoriteBorder className="text-2xl text-gray-500" />
               </div>
             </section>
 
-            <div className='pt-8'>
+            <div className='pt-5'>
               <h1 className=' text-xl font-bold ' >
                 Lead Web3 Engineer
               </h1>
