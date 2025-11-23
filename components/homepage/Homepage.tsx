@@ -5,6 +5,9 @@ import Jobs from './Jobs'
 import Category from './Category'
 import Listofjob from './Listofjob'
 import Discovery from './Discovery'
+import Newsletter from './Newsletter'
+import Employer from './Employer'
+import Review from './Review'
 
 
 const Homepage = () => {
@@ -16,6 +19,9 @@ const Homepage = () => {
       <Category/>
       <Listofjob/>
       <Discovery/>
+      <Review/>
+      <Employer/>
+      <Newsletter/>
     </div>
   )
 }
