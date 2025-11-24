@@ -1,29 +1,39 @@
 import React from 'react'
 import Image from 'next/image' 
 import Chicago from '@/assets/images/Chicago.jpg'
+import Boston from '@/assets/images/Boston.jpg'
+import NewYork from '@/assets/images/NewYorkCity.jpg'
+import Seatle from '@/assets/images/Seatle.jpg'
+
 
 const Listofjob = () => {
 
     const cities = [
   {
-    image: Chicago,
-    name: "Chicago",
+    image: Seatle,
+    name: "Seatle",
     jobs: 6,
   },
   {
-    image: Chicago,
-    name: "New York",
+    image: Boston,
+    name: "Boston",
     jobs: 12,
   },
   {
+    image: NewYork,
+    name: "New York",
+    jobs: 9,
+  },
+  ,
+  {
     image: Chicago,
-    name: "Los Angeles",
+    name: "Chicago",
     jobs: 9,
   },
   // Add more cities if you want
 ];
   return (
-    <div className=' h-170 bg-amber-300 pt-12'>
+    <div className=' h-170 bg-gray-100 pt-12'>
         <div className='text-center'>
             <h1 className=' text-3xl font-bold '>
                 List of USA jobs
@@ -33,13 +43,13 @@ const Listofjob = () => {
             </p>
         </div>
 
-       <div className="pt-10 px-30 grid grid-cols-3 gap-8">
+       <div className="pt-10 px-30 grid grid-cols-4 gap-8">
   {cities.map((city, index) => (
     <section key={index} className="overflow-hidden">
       <Image
         src={city.image}
         alt={city.name}
-        className="h-100 w-70 rounded-2xl transition-transform duration-300 hover:scale-110"
+        className="h-90 w-70 rounded-2xl transition-transform duration-300 hover:scale-110"
       />
 
       <div className="mx-25 pt-5">

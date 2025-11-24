@@ -8,7 +8,7 @@ import { MdMyLocation } from "react-icons/md";
 
 const Herosection = () => {
   return (
-    <div className="h-170 bg-green-600 flex justify-center items-center p-20 pb-40 gap-[-10rem]">
+    <div className="h-170  bg-green-900 flex justify-center items-center p-20 pb-40 gap-[-10rem]">
       <div className=" w-1/2 pb-1">
         <h1 className=" text-5xl text-amber-50  font-bold pb-10 pt-10 ">
             Find your dream job now

@@ -2,10 +2,10 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-center px-8 py-4 gap-70 bg-amber-700">
-      <div className="flex items-center justify-center px-8 py-4 gap-5" >
+    <div className="flex items-center justify-center px-8 py-4 gap-70 bg-green-900">
+      <div className="flex items-center justify-center px-8 py-4 gap-5 text-amber-50" >
       {/* Logo */}
-      <h1 className="text-xl font-bold">SearchJOB</h1>
+      <h1 className="text-xl font-bold italic">SearchJOB</h1>
 
       {/* Navigation */}
       <ul className="flex gap-x-6">
@@ -19,9 +19,9 @@ const Header = () => {
       </ul>
     </div>
       {/* Buttons */}
-      <div className="flex gap-x-4 items-center">
+      <div className="flex gap-x-4 items-center text-amber-50">
         <section>Login</section>
-        <section className=" border-2 py-3 px-6 rounded-full"> 
+        <section className=" border-2 py-3 px-6 rounded-full bg-white text-green-900"> 
             Post a Job
         </section>
       </div>
