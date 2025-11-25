@@ -11,19 +11,19 @@ const Herojobs = () => {
         style={{ backgroundImage: `url(${Pencil.src})` }}
       >
         <div className="">
-                <h1 className=" text-5xl text-amber-50  font-bold pb-10 pt-10  text-center">
+                <h1 className=" text-4xl text-amber-50  font-bold pb-10 pt-25  text-center">
                     Find your dream job now
                 </h1>
-                <div className="p-4 bg-amber-50 rounded-full w-[70rem] flex gap-4">
+                <div className="p-4 bg-amber-50 rounded-full w-[70rem] flex ml-40 gap-10">
           
           {/* Search input */}
-          <div className='flex '>
+          <div className='flex gap-10'>
           <section className="flex items-center gap-2 flex-1 border-r pr-4">
             <CiSearch className="text-gray-400 text-2xl" />
             <input 
               type="text" 
               placeholder="Job title or Keyword" 
-              className="outline-none w-full bg-transparent text-lg"
+              className="outline-none w-full bg-transparent pr-10 text-lg"
             />
           </section>
         
@@ -33,7 +33,7 @@ const Herojobs = () => {
             <input 
               type="text" 
               placeholder="All Cities" 
-              className="outline-none w-full bg-transparent text-lg"
+              className="outline-none w-full bg-transparent  pr-10 text-lg"
             />
           </section>
 
@@ -42,7 +42,7 @@ const Herojobs = () => {
             <input 
               type="text" 
               placeholder="All Categories" 
-              className="outline-none w-full bg-transparent text-lg"
+              className="outline-none w-full bg-transparent  pr-10 text-lg"
             />
           </section>
           </div>
