@@ -1,6 +1,12 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
+import AuthModal from "../auth/AuthModal";
 
 const Header = () => {
+  const [openMondal, setOpenModal ] = useState(false)
+
+  const handleOpenModal = () => setOpenModal(!openMondal)
+
   return (
     <div className="flex items-center justify-center px-8 py-4 gap-70 bg-green-900">
       <div className="flex items-center justify-center px-8 py-4 gap-5 text-amber-50" >
@@ -20,11 +26,13 @@ const Header = () => {
     </div>
       {/* Buttons */}
       <div className="flex gap-x-4 items-center text-amber-50">
-        <section>Login</section>
-        <section className=" border-2 py-3 px-6 rounded-full bg-white text-green-900"> 
+        <section onClick={handleOpenModal}>Login</section>
+        <section onClick={handleOpenModal} className=" border-2 py-3 px-6 rounded-full bg-white text-green-900"> 
             Post a Job
         </section>
       </div>
+
+      <AuthModal open={openMondal} onOpenChange={handleOpenModal} />
 
     </div>
   );
