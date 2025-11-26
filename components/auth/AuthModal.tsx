@@ -21,7 +21,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ open, onOpenChange }) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-md">
+      <DialogContent className="w-[28rem]">
         <DialogHeader>
           <DialogTitle className="text-center">
             {authState === "login" ? "Welcome Back" : "Create an Account"}

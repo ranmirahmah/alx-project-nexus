@@ -15,6 +15,7 @@ const Jobs = () => {
       title: "Lead Web3 Engineer",
       company: "Uxper",
       category: "Development and IT",
+      jobCategoryid: "1",
       location: "New York",
       type: "Remote",
       salary: "$450 - $900/month",
@@ -26,6 +27,7 @@ const Jobs = () => {
       title: "UX/UI Designer",
       company: "Figma Co.",
       category: "Design & Creativity",
+      jobCategoryid: "2",
       location: "San Francisco",
       type: "Hybrid",
       salary: "$350 - $700/month",
@@ -37,6 +39,7 @@ const Jobs = () => {
       title: "Backend Node.js Developer",
       company: "Techify",
       category: "Development",
+      jobCategoryid: "3",
       location: "Remote",
       type: "Remote",
       salary: "$500 - $1000/month",
@@ -77,8 +80,8 @@ const Jobs = () => {
 
             <div className="pt-5">
               <h1 className="text-xl font-bold">{job.title}</h1>
-              <p className="text-l">
-                by {job.company} in {job.category}
+              <p className="text-l ">
+                by {job.company} in <a className="text-green-900 font-bold" href={`/jobs?categoryId=${job.jobCategoryid}&${job.category}`} >{job.category}</a>
               </p>
             </div>
 

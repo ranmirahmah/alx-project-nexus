@@ -4,10 +4,10 @@ import React from "react";
 const SignUp = () => {
   return (
     <div>
-      <form action="">
+      <form action="" className="-mt-4">
         <div className="flex">
           <div className="w-full">
-            <label htmlFor="" className=" font-bold">
+            <label htmlFor="" className=" font-bold mt-[1rem]:">
               First Name
             </label>
             <input
@@ -15,7 +15,7 @@ const SignUp = () => {
               name="Name"
               id=""
               placeholder="Name"
-              className=" border p-2 "
+              className=" border p-2  rounded-md"
             />
           </div>
 
@@ -28,22 +28,22 @@ const SignUp = () => {
               name="Name"
               id=""
               placeholder="Name"
-              className=" border p-2"
+              className=" border p-2 rounded-md"
             />
           </div>
         </div>
 
         <div className=" w-full pt-6">
           <label htmlFor="" className=" font-bold">
-            UserName
+            Username
           </label>
           <br />
           <input
             type="text"
             name="Name"
             id=""
-            placeholder="Enter UserName"
-            className=" border p-2 w-full"
+            placeholder="Enter Username"
+            className=" border p-2 w-full rounded-md"
           />
         </div>
 
@@ -57,7 +57,7 @@ const SignUp = () => {
             name="Name"
             id=""
             placeholder="Enter Email"
-            className=" border p-2 w-full"
+            className=" border p-2 w-full rounded-md"
           />
         </div>
 
@@ -69,7 +69,7 @@ const SignUp = () => {
           <input
             type="number"
             placeholder="Enter Email"
-            className=" border p-2 w-full"
+            className=" border p-2 w-full rounded-md"
           />
         </div>
 
@@ -77,7 +77,7 @@ const SignUp = () => {
         <label htmlFor="" className="font-bold">
           Password
         </label><br />
-        <input type="password" name="" id="" placeholder="Enter password" className="border p-2 w-full pl-4" />
+        <input type="password" name="" id="" placeholder="Enter password" className="border p-2 w-full pl-4 rounded-md" />
         </div>
       
       </form>
@@ -85,11 +85,11 @@ const SignUp = () => {
 
       <div>
         
-      <h1 className="pt-5 pb-5">
-        <input type="checkbox" name="" id="" className="pl-2" />
-        Accept the {" "}
+      <span className="pt-5 pb-5">
+        <input type="checkbox" name="" id="" className="mt-4 mb-4" />
+          {" "}I accept the {" "}
         <span className="text-green-900">terms and Privacy Policy </span>
-      </h1>
+      </span>
       </div>
 
       <button className="w-full p-3 bg-green-900 border rounded-full text-white pt-4">

@@ -15,10 +15,51 @@ const Filter = () => {
       image: leadWeb,
       tags: ["Remote", "New York", "$450 - $900/month"],
     },
+    {
+      id: 2,
+      title: "Lead Web3 Engineer",
+      company: "Uxper",
+      category: "Development and IT",
+      image: leadWeb,
+      tags: ["Remote", "New York", "$450 - $900/month"],
+    },
+    {
+      id: 3,
+      title: "Lead Web3 Engineer",
+      company: "Uxper",
+      category: "Development and IT",
+      image: leadWeb,
+      tags: ["Remote", "New York", "$450 - $900/month"],
+    },
+    {
+      id: 4,
+      title: "Lead Web3 Engineer",
+      company: "Uxper",
+      category: "Development and IT",
+      image: leadWeb,
+      tags: ["Remote", "New York", "$450 - $900/month"],
+    },
+    {
+      id: 5,
+      title: "Lead Web3 Engineer",
+      company: "Uxper",
+      category: "Development and IT",
+      image: leadWeb,
+      tags: ["Remote", "New York", "$450 - $900/month"],
+    },
+    {
+      id: 6,
+      title: "Lead Web3 Engineer",
+      company: "Uxper",
+      category: "Development and IT",
+      image: leadWeb,
+      tags: ["Remote", "New York", "$450 - $900/month"],
+    },
+    
   ];
 
   return (
-    <div className="h-300 bg-gray-200 flex gap-10 justify-center pt-20">
+    <div className="h-400 bg-white flex gap-10 justify-center pt-20">
       {/* Sidebar MUST have a key */}
       <div
         key="sidebar"
@@ -86,11 +127,14 @@ const Filter = () => {
         </div>
       </div>
 
+
+      <div className=" ">
+
       {jobs.map((job) => (
-        <div key={job.id} className="w-200 h-45 bg-gray-300 rounded-2xl  mb-6">
-          <section className="p-10 pt-5 flex justify-between">
+        <div key={job.id} className="w-200 h-45 bg-gray-100 rounded-2xl  mb-6">
+          <section className="p-10 pt-5 flex justify-between ">
             <div className="flex gap-4">
-              <Image src={job.image} alt="" className="h-15 w-15" />
+              <Image src={job.image} alt="" className="h-15 w-15 bg-gray-100" />
 
               <div>
                 <h1 className="text-2xl">{job.title}</h1>
@@ -118,6 +162,7 @@ const Filter = () => {
           </div>
         </div>
       ))}
+      </div>
     </div>
   );
 };

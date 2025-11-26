@@ -26,7 +26,7 @@ const Login = () => {
           <input
             type="text"
             placeholder="Enter Account or Email"
-            className="border p-2 w-full pl-4"
+            className="border p-2 w-full pl-4 rounded-md"
           />
         </div>
 
@@ -40,7 +40,7 @@ const Login = () => {
             name=""
             id=""
             placeholder="Enter password"
-            className="border p-2 w-full pl-4"
+            className="border p-2 w-full pl-4 rounded-md"
           />
         </div>
       </form>
