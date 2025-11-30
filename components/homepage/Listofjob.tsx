@@ -45,6 +45,7 @@ const Listofjob = () => {
 
        <div className="pt-10 px-30 grid grid-cols-4 gap-8">
   {cities.map((city, index) => (
+    
     <section key={index} className="overflow-hidden">
       <Image
         src={city.image}
