@@ -1,39 +1,22 @@
 import React from 'react'
-import Image from 'next/image' 
+import Image, { StaticImageData } from 'next/image' 
 import Chicago from '@/assets/images/Chicago.jpg'
 import Boston from '@/assets/images/Boston.jpg'
 import NewYork from '@/assets/images/NewYorkCity.jpg'
 import Seatle from '@/assets/images/Seatle.jpg'
 
 type City = {
-  image: any;
+  image: StaticImageData;
   name: string;
   jobs: number;
 };
 
 const Listofjob = () => {
-
   const cities: City[] = [
-    {
-      image: Seatle,
-      name: "Seatle",
-      jobs: 6,
-    },
-    {
-      image: Boston,
-      name: "Boston",
-      jobs: 12,
-    },
-    {
-      image: NewYork,
-      name: "New York",
-      jobs: 9,
-    },
-    {
-      image: Chicago,
-      name: "Chicago",
-      jobs: 9,
-    },
+    { image: Seatle, name: "Seatle", jobs: 6 },
+    { image: Boston, name: "Boston", jobs: 12 },
+    { image: NewYork, name: "New York", jobs: 9 },
+    { image: Chicago, name: "Chicago", jobs: 9 },
   ];
 
   return (
@@ -62,4 +45,4 @@ const Listofjob = () => {
   )
 }
 
-export default Listofjob
+export default Listofjob;
