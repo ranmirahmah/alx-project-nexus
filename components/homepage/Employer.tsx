@@ -4,7 +4,7 @@ import hrInterview from "@/assets/images/hr-interview.jpg";
 
 const Employer = () => {
   return (
-    <div className="h-100 bg-green-900 flex">
+    <div className="h-100 bg-green-900 flex ">
       <div className="flex flex-1  justify-center items-center h-full  text-white">
         <div className="flex flex-col">
           <p className="text-lg font-bold">Employers</p>

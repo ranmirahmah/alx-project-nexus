@@ -20,7 +20,7 @@ const Listofjob = () => {
   ];
 
   return (
-    <div className='h-170 bg-gray-100 pt-12'>
+    <div className='h-170 bg-gray-100 pt-12 '>
       <div className='text-center'>
         <h1 className='text-3xl font-bold'>List of USA jobs</h1>
         <p className='text-xl pt-3'>Explore trending job searches in the USA</p>

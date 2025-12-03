@@ -48,8 +48,9 @@ const Jobs = () => {
     },
     // add more cards until you have 6
   ];
+  
   return (
-    <div className=" h-150  bg-white pt-10">
+    <div className=" h-150  bg-white pt-10 ">
       <div className="text-center">
         <h1 className=" text-3xl font-bold ">Featured jobs</h1>
         <p className=" text-xl pt-3">50k+ jobs for you to explore</p>
