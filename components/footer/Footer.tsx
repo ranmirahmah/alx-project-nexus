@@ -11,8 +11,8 @@ const Footer = () => {
                 <li className='pb-2'>Lorem ipsum dolor sit amet, consectetur <br />
                 adipiscing elit. Nam mauris risus, lobortis a <br />
                  commodo at, varius sit amet ipsum.</li>
-                <li className='pb-2'>1</li>
-                <li className='pb-2'>1</li>
+                <li className='pb-2'> 0809 354 635</li>
+                <li className='pb-2'>searchjobin@gmail.com</li>
             </ul>
       </div> 
 

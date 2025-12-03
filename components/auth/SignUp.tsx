@@ -1,101 +1,99 @@
 "use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const SignUp = () => {
+  const router = useRouter();
+
+  const handleSignup = (e) => {
+    e.preventDefault(); // prevents page reload
+    router.push("/signup-success"); // redirect
+  };
+
   return (
     <div>
       <form action="" className="-mt-4">
         <div className="flex">
           <div className="w-full">
-            <label htmlFor="" className=" font-bold mt-[1rem]:">
+            <label htmlFor="" className="font-bold">
               First Name
             </label>
             <input
               type="text"
-              name="Name"
-              id=""
               placeholder="Name"
-              className=" border p-2  rounded-md"
+              className="border p-2 rounded-md"
+               required 
             />
           </div>
 
-          <div>
-            <label htmlFor="" className=" font-bold">
+          <div className="ml-4">
+            <label htmlFor="" className="font-bold">
               Last Name
             </label>
             <input
               type="text"
-              name="Name"
-              id=""
               placeholder="Name"
-              className=" border p-2 rounded-md"
+              className="border p-2 rounded-md"
+               required 
             />
           </div>
         </div>
 
-        <div className=" w-full pt-6">
-          <label htmlFor="" className=" font-bold">
-            Username
-          </label>
-          <br />
+        <div className="w-full pt-6">
+          <label htmlFor="" className="font-bold">Username</label>
           <input
             type="text"
-            name="Name"
-            id=""
             placeholder="Enter Username"
-            className=" border p-2 w-full rounded-md"
+            className="border p-2 w-full rounded-md"
+             required 
           />
         </div>
 
-        <div className=" w-full pt-6">
-          <label htmlFor="" className=" font-bold">
-            Email
-          </label>
-          <br />
+        <div className="w-full pt-6">
+          <label htmlFor="" className="font-bold">Email</label>
           <input
             type="email"
-            name="Name"
-            id=""
             placeholder="Enter Email"
-            className=" border p-2 w-full rounded-md"
+            className="border p-2 w-full rounded-md"
+             required 
           />
         </div>
 
-        <div className=" w-full pt-6">
-          <label htmlFor="" className=" font-bold">
-            Phone Number
-          </label>
-          <br />
+        <div className="w-full pt-6">
+          <label htmlFor="" className="font-bold">Phone Number</label>
           <input
             type="number"
-            placeholder="Enter Email"
-            className=" border p-2 w-full rounded-md"
+            placeholder="Enter Phone Number"
+            className="border p-2 w-full rounded-md"
+             required 
           />
         </div>
 
-         <div className="pt-8">
-        <label htmlFor="" className="font-bold">
-          Password
-        </label><br />
-        <input type="password" name="" id="" placeholder="Enter password" className="border p-2 w-full pl-4 rounded-md" />
+        <div className="pt-8">
+          <label className="font-bold">Password</label>
+          <input
+            type="password"
+            placeholder="Enter password"
+            className="border p-2 w-full rounded-md"
+             required 
+          />
         </div>
-      
       </form>
 
-
       <div>
-        
-      <span className="pt-5 pb-5">
-        <input type="checkbox" name="" id="" className="mt-4 mb-4" />
-          {" "}I accept the {" "}
-        <span className="text-green-900">terms and Privacy Policy </span>
-      </span>
+        <span className="pt-5 pb-5">
+          <input type="checkbox" className="mt-4 mb-4"  required /> I accept the{" "}
+          <span className="text-green-900">terms and Privacy Policy</span>
+        </span>
       </div>
 
-      <button className="w-full p-3 bg-green-900 border rounded-full text-white pt-4">
-        Sign in
+      {/* 🔥 Button Redirects */}
+      <button
+        onClick={handleSignup}
+        className="w-full p-3 bg-green-900 border rounded-full text-white mt-4"
+      >
+        Sign Up
       </button>
-    
     </div>
   );
 };
